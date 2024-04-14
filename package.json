@@ -4,6 +4,10 @@
   "description": "binEvenLengthRound() : Calculate the bin size for even-sized bins to span the given interval. binBoundaries() : Generate an array of even-sized bins to span the given interval.",
   "main": "src/index.js",
   "browser": "dist/interval-bins.js",
+  "exports": {
+    "import": "./dist/interval-bins.js",
+    "require": "./src/index.js"
+  },
   "files": [
     "dist",
     "src"
