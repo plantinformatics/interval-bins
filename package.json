@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "binEvenLengthRound() : Calculate the bin size for even-sized bins to span the given interval. binBoundaries() : Generate an array of even-sized bins to span the given interval.",
   "main": "src/index.js",
-  "browser": "/dist/interval-bins.js",
+  "browser": "dist/interval-bins.js",
   "files": [
-    "/dist",
-    "/src"
+    "dist",
+    "src"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
