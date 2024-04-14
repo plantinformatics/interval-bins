@@ -1,0 +1,8 @@
+node_modules
+dist
+
+# Emacs Editor backup files
+*~
+
+# temporary files created by github.com/paul-gauthier/aider
+.aider*
