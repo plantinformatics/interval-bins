@@ -1,0 +1,19 @@
+{
+  "name": "interval-bins",
+  "version": "1.0.0",
+  "description": "binEvenLengthRound() : Calculate the bin size for even-sized bins to span the given interval. binBoundaries() : Generate an array of even-sized bins to span the given interval.",
+  "main": "src/index.js",
+	"files": ["src/index.js"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "interval",
+    "calculation",
+    "bins",
+    "boundaries"
+  ],
+  "author": "AgriBio / Don Isdale",
+  "license": "GPL-3.0-or-later"
+}
