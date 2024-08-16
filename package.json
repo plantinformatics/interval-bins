@@ -1,16 +1,21 @@
 {
   "name": "interval-bins",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/plantinformatics/interval-bins.git"
   },
   "description": "binEvenLengthRound() : Calculate the bin size for even-sized bins to span the given interval. binBoundaries() : Generate an array of even-sized bins to span the given interval.",
-  "main": "src/index.js",
+  "type": "module",
+  "main": "main.js",
   "browser": "dist/interval-bins.js",
   "exports": {
-    "import": "./dist/interval-bins.js",
-    "require": "./src/index.js"
+    ".": {
+      "import": "./dist/interval-bins.mjs",
+      "require": "./dist/interval-bins.cjs"
+    },
+    "./dist/interval-bins.mjs": "./dist/interval-bins.mjs",
+    "./dist/interval-bins.cjs": "./dist/interval-bins.cjs"
   },
   "files": [
     "dist",
@@ -18,8 +23,7 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "rm -rf build && mkdir build && rollup -f umd -n interval-bins -o dist/interval-bins.js -- main.js",
-    "build": "webpack"
+    "prepare": "rm -rf dist && mkdir dist && rollup -c"
   },
   "keywords": [
     "javascript",
